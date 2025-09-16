@@ -3,11 +3,13 @@ import { fileURLToPath } from "url";
 import path, { dirname } from "path";
 import express from "express";
 import cors from "cors";
+import dotenv from "dotenv";
 
-// Init constants and app
+// Configure and init app
 // Resolve file/dir paths (ES modules don't have __filename/__dirname by default)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+dotenv.config();
 const app = express();
 
 // Set up middlewares

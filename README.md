@@ -20,6 +20,9 @@ Simple Express.js microservice that converts dates to Unix time (milliseconds) a
 
 ## Requirements
 - Node.js >= 22 (tested with Node 22)
+- express
+- dotenv ( loads environment variables )
+- cors
 
 ## Quick Start
 ```bash
@@ -30,7 +33,7 @@ cd timestamp-microservice
 # Install dependencies
 npm install
 
-# Start the server (watches file changes)
+# Start the server
 npm start
 
 # The app listens on PORT (default 3000)
